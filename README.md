@@ -1,8 +1,8 @@
-# Nome:
-João Lucas Pereira Maciel/
+# Integrantes:
+João Lucas Pereira Maciel e
 Lucas Hora Arcanjo Oliveira
 
-# Identificação do tema do aplicativo:
+# Descrição:
 O aplicativo roda em torno do mundo animal, trazendo cconhecimento ao usuário, sobre as diversidades dos seres que habitam o nosso planeta.
 
 # Descrição objetiva e imparcial do conteúdo do aplicativo:
