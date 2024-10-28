@@ -1,6 +1,6 @@
 # Integrantes:
 João Lucas Pereira Maciel e
-Lucas Hora Arcanjo Oliveira
+Lucas Hora Arcanjo de Oliveira
 
 # Descrição:
 O aplicativo roda em torno do mundo animal, trazendo cconhecimento ao usuário, sobre as diversidades dos seres que habitam o nosso planeta.
