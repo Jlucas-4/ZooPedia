@@ -9,3 +9,7 @@ O aplicativo roda em torno do mundo animal, trazendo cconhecimento ao usuário, 
 A aplicação consiste em informar curiosidades, informações de alimentação, habitat, características e comportamento dos animais.
 
 # Sumário:
+## Tela inicial da wiki: https://github.com/Jlucas-4/ZooPedia/wiki
+## Diagrama de classes: https://github.com/Jlucas-4/ZooPedia/wiki/Diagrama-de-classes
+## Telas do app: https://github.com/Jlucas-4/ZooPedia/wiki/TELAS
+## Descrição dos widgets: https://github.com/Jlucas-4/ZooPedia/wiki/Widgets
