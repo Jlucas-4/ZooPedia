@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zoopediaapp/main.dart';
 
 void main() {
   runApp(listaAnimal());
@@ -30,7 +31,7 @@ class listaAnimal extends StatelessWidget {
                 
                 child: ElevatedButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, '/Pag2');
+                      Navigator.pushNamed(context, '/MainApp');
                     },
                     
                     child: const Text('Animais'),
@@ -41,6 +42,7 @@ class listaAnimal extends StatelessWidget {
       ),
       routes: {
         //'/Pag2': (context) => const Pag2(),
+        '/MainApp': (context) => MainApp(),
       },
     );
   }
