@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(listaHabitat());
+  runApp(ListaHabitat());
 }
 
-class listaHabitat extends StatelessWidget {
-  listaHabitat({super.key});
+class ListaHabitat extends StatelessWidget {
+  ListaHabitat({super.key});
 
   @override
   Widget build(BuildContext context) {

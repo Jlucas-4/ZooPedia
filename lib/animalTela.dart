@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(animalTela());
+  runApp(AnimalTela());
 }
 
-class animalTela extends StatelessWidget {
-  animalTela({super.key});
+class AnimalTela extends StatelessWidget {
+  AnimalTela({super.key});
 
   @override
   Widget build(BuildContext context) {

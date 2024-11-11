@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(habitatTela());
+  runApp(HabitatTela());
 }
 
-class habitatTela extends StatelessWidget {
-  habitatTela({super.key});
+class HabitatTela extends StatelessWidget {
+  HabitatTela({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:zoopediaapp/main.dart';
 
 void main() {
-  runApp(listaAnimal());
+  runApp(ListaAnimal());
 }
 
-class listaAnimal extends StatelessWidget {
-  listaAnimal({super.key});
+class ListaAnimal extends StatelessWidget {
+  ListaAnimal({super.key});
 
   @override
   Widget build(BuildContext context) {
