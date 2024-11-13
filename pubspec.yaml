@@ -22,3 +22,9 @@ flutter:
     - img/animais/
     - img/habitats/
     - img/telaInicial/
+
+  fonts:
+  - family: Junge
+    fonts:
+      - asset: fonts\Junge-Regular.ttf
+       

@@ -30,11 +30,16 @@ class MainApp extends StatelessWidget {
               child: 
               Container(
                 margin:const EdgeInsets.only(
-                  top: 20,
+                  top: 25,
                   bottom: 20,
                 ),
                 child: const Text(
                   'Sua Enciclopédia da Vida Selvagem!',
+                  style: TextStyle(
+                    fontFamily: 'Junge',
+                    fontSize: 20, 
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ),
@@ -66,9 +71,9 @@ class MainApp extends StatelessWidget {
                   'Animais',
                   style: TextStyle(
                     // personalizar estilo da fonte do botão
-                    fontSize: 38,
+                    fontSize: 45,
                     color: Colors.white,
-                    fontFamily: 'Junge',// tem q baixar ou importar a fonte, pq ela n tá indo
+                    fontFamily: 'Junge',
                   ),
                 ),
               ),
