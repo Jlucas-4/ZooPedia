@@ -12,32 +12,26 @@ class ListaHabitat extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: ListView(
-            children: [
-              Container(
-                margin: const EdgeInsets.only(
-                  top: 10,
-                ),
-                child: const Icon(
-                  Icons.home,
-                ),
+          children: [
+            Container(
+              margin: const EdgeInsets.only(
+                top: 10,
               ),
-
-              Container(
-                margin: EdgeInsets.only(
-                  
-
-                ),
-                
-                child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context, '/Pag2');
-                    },
-                    
-                    child: const Text('Animais'),
-                    ),
-              )
-            ],
-          ),
+              child: const Icon(
+                Icons.home,
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/Pag2');
+                },
+                child: const Text('Habitats'),
+              ),
+            )
+          ],
+        ),
       ),
       routes: {
         //'/Pag2': (context) => const Pag2(),
