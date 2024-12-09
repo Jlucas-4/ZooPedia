@@ -12,31 +12,36 @@ class ListaAnimal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold( 
-        appBar:AppBar(
-          leading: 
-            Container(
-              color: Color.fromRGBO(100,0,0,0),
-              child: Center(
-                child: Builder(builder: (context) => ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/MainApp');
-                },
-                child: const Icon(Icons.home),
-                ),),),
+      home: Scaffold(
+        appBar: AppBar(
+          leading: Container(
+            color: const Color.fromRGBO(100, 0, 0, 0),
+            child: Center(
+              child: Builder(
+                builder: (context) => ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/MainApp');
+                  },
+                  child: const Icon(Icons.home),
+                ),
+              ),
             ),
           ),
+        ),
         body: ListView.builder(
-            itemBuilder:(context, index) => Container(
-              //Card do animal
-              margin: const EdgeInsets.only(
-                right: 120,
-                top: 70,
-              ),
-              child: Builder(builder: (context) => ElevatedButton(
-                onPressed: () {//Navegação entre paginas ↴
-                  Navigator.pushNamed(
-                    context, '/ListaAnimal');
+          itemBuilder: (context, index) => Container(
+            //Card do animal
+            margin: const EdgeInsets.only(
+              right: 120,
+              top: 40,
+            ),
+            child: Builder(
+              builder: (context) => ElevatedButton(
+                onPressed: () {
+                  // atribuir o valor do index clicado a uma variavel, chamando uma função pq diteramente ele n vai
+                  fAnimalSelect(lAnimal[index].id);
+                  //Navegação entre paginas ↴
+                  Navigator.pushNamed(context, '/MainApp'); 
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF6C553F),
@@ -50,10 +55,10 @@ class ListaAnimal extends StatelessWidget {
                       bottomRight: Radius.circular(40),
                     ))),
                 child: const Text(
-                  'Variavel animal nome',
+                  'Animal nome',
                   style: TextStyle(
                     // personalizar estilo da fonte do botão
-                    fontSize: 45,
+                    fontSize: 30,
                     color: Colors.white,
                     fontFamily: 'Junge',
                   ),
@@ -61,8 +66,8 @@ class ListaAnimal extends StatelessWidget {
               ),
             ),
           ),
-          itemCount: 3,
-          ),
+          itemCount: lAnimal.length,
+        ),
       ),
       routes: {
         //'/Pag2': (context) => const Pag2(),
