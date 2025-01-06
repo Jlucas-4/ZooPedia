@@ -47,7 +47,6 @@ class clAnimal {
 // Variavél que passa o numero index da pag clicada pelo usuario para a construção correta na pag.
 int animalSelect = 0;
 
-
 void fAnimalSelect(indexAnimal) {
   animalSelect = indexAnimal - 1;
   // aqui obtem o index/posição do objeto no array
