@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zoopediaapp/main.dart';
 import 'package:zoopediaapp/animalTela.dart';
 import 'package:zoopediaapp/classes/animal.dart';
+import 'package:zoopediaapp/logicasDasPag/logicaAnimalTela.dart';
 
 void main() {
   runApp(ListaAnimal());
@@ -42,7 +43,10 @@ class ListaAnimal extends StatelessWidget {
                   // atribuir o valor do index clicado a uma variavel, chamando uma função pq diteramente ele n vai
                   fAnimalSelect(lAnimal[index].id);
                   //Navegação entre paginas ↴
-                  Navigator.pushNamed(context, '/AnimalTela'); 
+                  Navigator.pushNamed(context, '/AnimalTela');
+                  atribuirNumeroDieta();
+                  atribuirNumeroHabito();
+                  atribuirNumeroMovimentacao();
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF6C553F),
@@ -55,9 +59,9 @@ class ListaAnimal extends StatelessWidget {
                       topRight: Radius.circular(40),
                       bottomRight: Radius.circular(40),
                     ))),
-                child: const Text(
-                  'Animal nome',
-                  style: TextStyle(
+                child: Text(
+                  lAnimal[index].nome,
+                  style:const TextStyle(
                     // personalizar estilo da fonte do botão
                     fontSize: 30,
                     color: Colors.white,
